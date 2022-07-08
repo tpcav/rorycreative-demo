@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Rory</title>
+
+  <link rel="stylesheet" href="css/coverflow.css">
+
+    <!-- Modernizr -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+    <style>
+    /*
+    * Layout
+    */
+
+    html, body {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        align-content: center;
+
+        background: -webkit-gradient(radial, center center, 50px, center center, 10%, color-stop(10%, #333 ), color-stop(100%,white));
+        background: -webkit-radial-gradient(center, ellipse cover, rgb(228, 228, 228), white 100%);
+        
+        height: 100%;
+        width: 100%;
+        
+        text-align: center;
+
+        font-family: sans-serif;
+    }
+
+
+    /*
+    * Coverflow
+    */
+
+
+    #coverflow {
+        height: 100%;
+        width: 100%;
+        align-content: center;
+        margin-top: 100px;
+
+        -webkit-perspective: 600px;
+    }
+
+    #coverflow section {
+        display: position;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        
+        width: 170px;
+        height: 170px;
+        
+        margin-left: -90px;
+        margin-top: -90px;
+        
+        background-color: white;
+        background-size: 100%;
+        
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+      
+        -webkit-transition: all 300ms ease-in;
+        -moz-transition: all 300ms ease-in;
+            -ms-transition: all 300ms ease-in;
+            -o-transition: all 300ms ease-in;
+                transition: all 300ms ease-in;
+
+        -webkit-box-reflect: below -0.5px
+        -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.60, transparent), to(black)); 
+    }
+
+    /*
+    * Controls
+    */
+
+    #controls {
+        position: absolute;
+        width: 100%;
+        top: 30%;
+        z-index: 1;
+
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        
+        color: #999;
+        font-size: 18px;
+        align-content: center;
+    }
+
+    #controls a  {
+        color: white; 
+        cursor: pointer;
+    }
+
+    #controls a:hover  {
+        color: 66FFFF;
+    }
+
+    .rory-logo {
+      width: 130px;
+      margin-top: -100px;
+      margin-right: 14px;
+    }
+    </style>
+
+</head>
+<body>
+
+  <nav id="controls">
+    <a id="prev"></a><a id="next"></a>
+    <img class="rory-logo" src="https://static1.squarespace.com/static/5a109d68017db2e2b0bb6904/t/5b0595120e2e723067f9012c/1527092500157/rorylogo_transparent.png?format=1000w">
+  </nav>
+  
+  <div id="coverflow">
+    <section data-cover="photo_00.jpg">
+      <a href="#"></a>
+    </section>
+    <section data-cover="photo_01.jpg"></section>
+    <section data-cover="photo_02.jpg"></section>
+    <section data-cover="photo_03.jpg"></section>
+    <section data-cover="photo_04.jpg"></section>
+    <section data-cover="photo_05.jpg"></section>
+    <section data-cover="photo_06.jpg"></section>
+    <section data-cover="photo_07.jpg"></section>
+    <section data-cover="photo_01.jpg"></section>
+    <section data-cover="photo_02.jpg"></section>
+    <section data-cover="photo_03.jpg"></section>
+    <section data-cover="photo_04.jpg"></section>
+    <section data-cover="photo_05.jpg"></section>
+    <section data-cover="photo_06.jpg"></section>
+  </div>
+
+  <!-- Javascript  -->
+  <script src="coverflow.js"></script>
+  
+</body>
+</html>
