@@ -68,8 +68,9 @@
         background-position: center;
         background-size: cover;
         width: 325px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+        -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), to(white));
         background: rgb(255, 255, 255);
-        -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0006);
         margin-top: 175px;
       }
 
@@ -155,14 +156,17 @@
       @media only screen and (max-width: 500px) {
         .swiper-slide {
           background-position: center;
-          background-size: cover;
           width: 175px;
           height: 175px;
           background: rgb(255, 255, 255);
-          -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0006);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+          -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), to(white));
           margin-top: 220px;
           top: -60px;
           overflow: hidden;
+          z-index: 5;
+          isolation: isolate;
+          white-space: nowrap;
         }
       }
 
@@ -336,9 +340,9 @@
         centeredSlides: true,
         slidesPerView: "auto",
         coverflowEffect: {
-          rotate: 22,
-          stretch: 20,
-          depth: 200,
+          rotate: 20,
+          stretch: 10,
+          depth: 150,
           modifier: 1,
           slideShadows: true,
         },
