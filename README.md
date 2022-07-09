@@ -1,6 +1,6 @@
 `2022`
 
-![rory__creative_red_logo](rorylogo.png)
+![rory__creative_red_logo](rory_logo.png)
 
 # rorycreative-demo
 
